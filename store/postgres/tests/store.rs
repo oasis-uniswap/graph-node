@@ -1561,7 +1561,7 @@ fn handle_large_string_with_index() {
             .collect::<String>();
         let other_text = long_text.clone() + "X";
 
-        let metrics_registry = Arc::new(MockMetricsRegistry::new());
+        let metrics_registry = Arc::new(() MockMetricsRegistry::new());
         let stopwatch_metrics = StopwatchMetrics::new(
             Logger::root(slog::Discard, o!()),
             TEST_SUBGRAPH_ID.clone(),
