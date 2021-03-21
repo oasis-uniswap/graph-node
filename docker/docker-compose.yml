@@ -17,7 +17,7 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'oeth:http://rpc.oasiseth.org:8545'
+      ethereum: 'oeth:https://rpc.oasiseth.org:8545'
       RUST_LOG: info
   ipfs:
     image: ipfs/go-ipfs:v0.4.23
